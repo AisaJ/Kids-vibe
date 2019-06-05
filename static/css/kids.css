@@ -1,0 +1,45 @@
+body{
+  font-family: 'Handlee', cursive;
+  /* font-family: 'El Messiri', sans-serif; */
+  font-size: 1.5rem;
+}
+h1,h2{
+  font-family: 'El Messiri', sans-serif;
+}
+/* Main container */
+.overlay-image {
+  position: relative;
+  width: 100%;
+ }
+ /* Original image */
+ .overlay-image .image {
+  display: block;
+  width: 100%;
+ 
+ }
+ /* Original text overlay */
+ .overlay-image .text {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.5em;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+ }
+ /* New overlay on hover */
+.overlay-image .hover {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+ }
+ /* New overlay appearance on hover */
+ .overlay-image:hover .hover {
+  opacity: 1;
+ }
