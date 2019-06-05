@@ -1,7 +1,12 @@
 
 <nav class="navbar sticky-top navbar-expand-lg">
-    <div class="w-100 order-1 order-md-0 dual-collapse2">
-        <a class="navbar-brand mr-auto" href="" id="hoods-link">Venues</a>
+    <div class=" navbar-collapse w-100 order-1 order-md-0 dual-collapse2">
+        <a class="navbar-brand mr-auto" href="" id="hoods-link">Kids-Vibe</a>
+        <form class="form-inline" role="search" action="" id="f-search">
+            <div class="md-form my-0">
+                <input class="form-control mr-sm-2" type="text" id="search-place" placeholder="Search Venue" aria-label="Search" name="name">            
+            </div>
+        </form>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><img src="https://img.icons8.com/material/24/000000/circled-menu.png"></span>
         </button>
@@ -9,20 +14,16 @@
     
     <div class="mx-auto order-0">
       <ul class="navbar-nav mx-auto" id="hood-icon">
-        <a href="/"><p><img src="https://dumielauxepices.net/sites/default/files/hello-clipart-dora-637662-3634878.png" alt="icon" width="80" ></p></a>
-        <a href="/" id="home"><p><strong>Kids Vibe</strong></p></a>
+        <a href="/"><img src="https://dumielauxepices.net/sites/default/files/hello-clipart-dora-637662-3634878.png" alt="icon" width="80" ></a>
+        <a href="/" id="home"><strong></strong></a>
       </ul>
     </div>        
     <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
         
         <ul class="navbar-nav ml-auto">
-            <form class="form-inline" role="search" action="" id="f-search">
-                <div class="md-form my-0">
-                    <input class="form-control mr-sm-2" type="text" id="search-place" placeholder="Search Venue" aria-label="Search" name="name">            
-                </div>
-            </form>
+            
             <li class="nav-item">
-                <a class="nav-link waves-effect waves-light" href="" id="out">Gallery</a>
+                <a class="nav-link waves-effect waves-light" href="" id="gallery">Gallery</a>
             </li>
           {% if user.is_authenticated%}
           
@@ -34,7 +35,7 @@
             </li>
             {% else %}
             <li class="nav-item">
-                <a class='btn btn-default' href="" id="in">Login</a>
+                <a class='btn btn-login' href="" id="in">Login</a>
             </li>
             
             <li class="nav-item">
