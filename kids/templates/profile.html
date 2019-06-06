@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+
+{%block content%}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <h3>Welcome Pal</h3>
+        <button class="btn btn-edit">Edit Profile</button>
+        <div class="text-center">
+          {% for profile in profiles%}
+          <img src="{{profile.prof_pic.url}}" alt="profile" class="img-fluid profile rounded-circle">
+          <div>
+            <h3>{{profile.name}}</h3>
+            <p>Age: {{profile.age}}</p>
+            <h3>Club: {{profile.club.name}}</h3>
+            <p>Area: {{profile.club.location}}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+{% endblock %}
