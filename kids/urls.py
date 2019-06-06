@@ -8,6 +8,7 @@ urlpatterns=[
   url(r'^accounts/',include('registration.backends.simple.urls')),
   url(r'^gallery/$',views.gallery,name='gallery'),
   url(r'^profile/$',views.user_profile,name='userProfile'),
+  url(r'^addProfile/',views.add_profile,name='addProfile'),
 ]
 if settings.DEBUG:
   urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

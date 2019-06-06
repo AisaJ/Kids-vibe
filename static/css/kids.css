@@ -17,7 +17,7 @@ h1,h2{
   color: #845EC2;
   text-decoration: underline;
 }
-.auth,.new-add,.kids-gallery{
+.auth,.new-add,.kids-gallery,.prof-section{
   margin-top: 3%;   
 }
 .auth-form{
