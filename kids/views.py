@@ -5,3 +5,7 @@ from django.http import HttpRequest,Http404
 def home(request):
   title='Kids-Vibe'
   return render (request,'home.html',{"title":title})
+
+def gallery(request):
+  
+  return render(request,'gallery.html')

@@ -23,6 +23,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 <!-- Material Design Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
 
     <link rel="stylesheet" href="{% static 'css/kids.css'%}">
   {% endblock %}
@@ -30,9 +31,9 @@
 <body>
     {%include 'navbar.html'%}
     {%block content%}
-
-    {% include 'footer.html'%}
+    
     {%endblock%}
+    {% include 'footer.html'%}
 
   {% block scripts %}
     {% bootstrap_javascript %}
@@ -47,7 +48,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
     <script type="text/javascript" src="{% static 'js/kids.js'%}"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
   {% endblock %}
   
 </body>
