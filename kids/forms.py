@@ -13,4 +13,6 @@ class NewCornerForm(forms.ModelForm):
 
 class NewClubForm(forms.ModelForm):
   class Meta:
-    model=
+    model=KidsClub
+    exclude=['user']
+
