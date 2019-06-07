@@ -7,11 +7,12 @@ from .forms import NewProfileForm
 
 def home(request):
   title='Kids-Vibe'
-  return render (request,'home.html',{"title":title})
+  venues=KidsCorner.objects.all()
+  return render (request,'home.html',{"title":title,"venues":venues})
 
 def gallery(request):
-  venues=KidsCorner.objects.all()
-  return render(request,'gallery.html',{"venues":venues})
+  gallery=Gallery.objects.all()
+  return render(request,'gallery.html',{"gallery":gallery})
 
 def user_profile(request):
   current_user=request.user 

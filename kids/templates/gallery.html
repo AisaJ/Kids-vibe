@@ -9,8 +9,10 @@
        <h2 class="text-center">GALLERY</h2>
         <div class="row">
           <div class="col-md-4">
-            <a data-fancybox="gallery" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(128).jpg" class="kids-collection" title="{{image.name}}" data-caption="{{image.name}}: {{image.description}}.. [Taken in {{image.location}}]"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(128).jpg" alt="Zoomed-image" class="img-fluid">
-            </a>      
+            {%for photo in gallery%}
+            <a data-fancybox="gallery" href="{{photo.photo.url}}" class="kids-collection"  data-caption="{{photo.caption}}"><img src="{{photo.photo.url}}" alt="Zoomed-image" class="img-fluid">
+            </a>    
+            {% endfor %}  
           </div>
         </div>      
       </div>
