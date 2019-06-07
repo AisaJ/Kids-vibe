@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.http import HttpRequest,Http404
-from .models import KidsClub,KidsCorner,Profile
+from .models import KidsClub,KidsCorner,Profile,Gallery
 from django.contrib.auth.decorators import login_required
 from .forms import NewProfileForm
 # Create your views here.
@@ -30,7 +30,7 @@ def add_profile(request):
       profile.user = current_user
       prof_pic=form.cleaned_data['prof_pic']
       name=form.cleaned_data['name']
-      gender= form.cleaned_data['gender']
+      gender=form.cleaned_data['gender']
       age=form.cleaned_data['age']
       Profile.objects.filter(user=current_user).update(prof_pic=prof_pic,name=name,gender=gender,age=age)
       profile.save()       

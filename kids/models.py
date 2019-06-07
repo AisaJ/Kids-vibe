@@ -27,7 +27,7 @@ class KidsClub(models.Model):
 class Profile(models.Model):
   name=models.CharField(max_length=60)
   age=models.IntegerField()
-  Gender=models.CharField(max_length=50)
+  gender=models.CharField(max_length=50)
   prof_pic=models.ImageField(upload_to='profiles/',default='avatar.png')
   user=models.ForeignKey(User,on_delete=models.CASCADE)
   club=models.ForeignKey(KidsClub,on_delete=models.CASCADE)

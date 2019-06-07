@@ -17,7 +17,7 @@ h1,h2{
   color: #845EC2;
   text-decoration: underline;
 }
-.auth,.new-add,.kids-gallery,.prof-section{
+.auth,.new-add,.kids-gallery,.prof-section,#venues,.club-row{
   margin-top: 3%;   
 }
 .auth-form{
@@ -82,4 +82,36 @@ h1,h2{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.galo{
+  text-decoration: underline;
+  text-decoration-color: #845EC2;
+}
+.dropdown-item:hover{
+  background-color: rgba(0,255,69,0.9);
+}
+.prof-details{
+  margin-top: 2%;
+  border: 5px solid rgb(0,186,255);
+  border-radius: 50px;
+}
+.prof-color{
+  color: #845EC2;
+}
+.venue-container{
+  border: 2px solid rgb(0,186,255);
+  padding: 7%;
+  margin: 2%;
+  border-radius: 40px;
+}
+.venue-contents{
+  padding: 5%;
+}
+.venue-title{
+  color: #845EC2;
+  margin-top: 6%;
+}
+#clubs{
+  margin-top: 5%;
+  margin-bottom: 5%;
 }

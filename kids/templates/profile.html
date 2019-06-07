@@ -10,10 +10,10 @@
         <div class="text-center">
           {% for profile in profiles%}
           <img src="{{profile.prof_pic.url}}" alt="profile" class="img-fluid profile rounded-circle">
-          <div>
-            <h3>{{profile.name}}</h3>
+          <div class="prof-details">
+            <strong><h3 class="prof-color">{{profile.name}}</h3></strong>
             <p>Age: {{profile.age}}</p>
-            <h3>Club: {{profile.club.name}}</h3>
+            <strong><h3 class="prof-color">Club: {{profile.club.name}}</h3></strong>
             <p>Area: {{profile.club.location}}</p>
           </div>
           {% endfor %}

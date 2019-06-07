@@ -2,10 +2,7 @@
 
 {% block content %}
   <div class="container-fluid">
-    <div class="row">
-      <!-- <div class="header text-center">
-        <h2 id="header-text">Finding Nemo's playground<img src="../static/images/smiley.png" class="img-fluid" width="50">...<img src="/static/images/dora.png" class="img-fluid" width="150"></h2>
-      </div> -->
+    <div class="row">      
       <div class="overlay-image"><a href="">
           <img class="image" src="/static/images/magical-paths.jpg" alt="Alt text" height="600"/>
           <div class="normal">
@@ -15,7 +12,221 @@
            <img class="image" src="static/images/playground.jpg" alt="Alt text hover" height="600"/>
            <div class="text">...First stop<img src="../static/images/smiley.png" class="img-fluid" width="50"></div>
           </div>
-         </a></div>
+         </a>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div id="venues">
+          <h2 class="text-center">All work with no play, makes Jack a dull boy..</h2>
+          <h3 class="text-center">Let's find some exciting place for your kid to release his/her energy<img src="../static/images/smiley.png" width="50"></h3>
+          <div class="row">
+            {%for venue in venues%}
+            <div class="col-md-4">
+              <div class="venue-container">
+                <div id="venue-contents">
+                  <img src="{{venue.image.url}}" alt="Venue image" class="img-fluid z-depth-4">
+                  <h4 class="venue-title">{{venue.venue}}</h4>
+                  <p>{{venue.description}}</p>
+                </div>            
+              </div>
+            </div>
+            {% endfor %}
+          </div>          
+        </div>
+
+        <div id="clubs">
+          <h2 class="text-center">Exploring Kid's Talent</h2>
+          <div class="row club-row">
+            <div class="col-md-4">
+              <!-- Card Wider -->
+        <div class="card card-cascade wider">
+
+            <!-- Card image -->
+            <div class="view view-cascade overlay">
+              <img  class="card-img-top" src="https://images.pexels.com/photos/1534125/pexels-photo-1534125.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>  
+            <!-- Card content -->
+            <div class="card-body card-body-cascade text-center pb-0">
+  
+              <!-- Title -->
+              <!-- Subtitle -->
+              <h5 class="blue-text pb-2"><strong>Art/Drawing</strong></h5>
+              <!-- Text -->
+              <p class="card-text">Let your kids imagination run wild.</p>
+
+              <!-- Card footer -->
+              <div class="card-footer text-muted text-center mt-4">
+                <a href=""><button class="btn btn-edit">Join Club</button></a>
+              </div>
+  
+            </div>
+  
+          </div>
+          <!-- Card Wider -->
+            </div>
+            <div class="col-md-4">
+               <!-- Card Wider -->
+        <div class="card card-cascade wider">
+
+            <!-- Card image -->
+            <div class="view view-cascade overlay">
+              <img  class="card-img-top" src="https://images.pexels.com/photos/164835/pexels-photo-164835.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>  
+            <!-- Card content -->
+            <div class="card-body card-body-cascade text-center pb-0">
+  
+              <!-- Title -->
+              <!-- Subtitle -->
+              <h5 class="blue-text pb-2"><strong>Music/Dance</strong></h5>
+              <!-- Text -->
+              <p class="card-text">Talent nurtured from young age emerges a super star. Next Michael Jackson or whoever is your Icon</p>
+
+              <!-- Card footer -->
+              <div class="card-footer text-muted text-center mt-4">
+                <a href=""><button class="btn btn-edit">Join Club</button></a>
+              </div>
+  
+            </div>
+  
+          </div>
+          <!-- Card Wider -->
+            </div>
+            <div class="col-md-4">
+               <!-- Card Wider -->
+        <div class="card card-cascade wider">
+
+            <!-- Card image -->
+            <div class="view view-cascade overlay">
+              <img  class="card-img-top" src="https://zenplanner.com/wp-content/uploads/2017/01/kids-yoga-800x450.png" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>  
+            <!-- Card content -->
+            <div class="card-body card-body-cascade text-center pb-0">
+  
+              <!-- Title -->
+              <!-- Subtitle -->
+              <h5 class="blue-text pb-2"><strong>Kids Yoga</strong></h5>
+              <!-- Text -->
+              <p class="card-text">From a young age your kid can master and get to control their emotions/character.</p>
+
+              <!-- Card footer -->
+              <div class="card-footer text-muted text-center mt-4">
+                <a href=""><button class="btn btn-edit">Join Club</button></a>
+              </div>
+  
+            </div>
+  
+          </div>
+          <!-- Card Wider -->
+            </div>
+          </div>
+          <div class="row club-row">
+           
+            <div class="col-md-4">
+               <!-- Card Wider -->
+        <div class="card card-cascade wider">
+
+            <!-- Card image -->
+            <div class="view view-cascade overlay">
+              <img  class="card-img-top" src="https://i1.wp.com/www.dancexchange.org.uk/wp-content/uploads/sites/3/2015/12/street-dance-kids3.jpg?w=786&h=515&crop&ssl=1" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>  
+            <!-- Card content -->
+            <div class="card-body card-body-cascade text-center pb-0">
+  
+              <!-- Title -->
+              <!-- Subtitle -->
+              <h5 class="blue-text pb-2"><strong>Kids Choreography</strong></h5>
+              <!-- Text -->
+              <p class="card-text">A time to enjoy, flex and have some aweeesome fun!</p>
+
+              <!-- Card footer -->
+              <div class="card-footer text-muted text-center mt-4">
+                <a href=""><button class="btn btn-edit">Join Club</button></a>
+              </div>
+  
+            </div>
+  
+          </div>
+          <!-- Card Wider -->
+            </div>
+        
+            <div class="col-md-4">
+               <!-- Card Wider -->
+        <div class="card card-cascade wider">
+
+            <!-- Card image -->
+            <div class="view view-cascade overlay">
+              <img  class="card-img-top" src="https://s3.amazonaws.com/zenplannerwordpress-stack0/wp-content/uploads/sites/350/2018/02/26210222/Why-every-kid-should-be-enrolled-in-martial-arts-image.png" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>  
+            <!-- Card content -->
+            <div class="card-body card-body-cascade text-center pb-0">
+  
+              <!-- Title -->
+              <!-- Subtitle -->
+              <h5 class="blue-text pb-2"><strong>Martial Arts</strong></h5>
+              <!-- Text -->
+              <p class="card-text">A time to enjoy, flex and have some aweeesome fun!</p>
+
+              <!-- Card footer -->
+              <div class="card-footer text-muted text-center mt-4">
+                <a href=""><button class="btn btn-edit">Join Club</button></a>
+              </div>
+  
+            </div>
+  
+          </div>
+          <!-- Card Wider -->
+            </div>
+            <div class="col-md-4">
+              <!-- Card Wider -->
+        <div class="card card-cascade wider">
+
+            <!-- Card image -->
+            <div class="view view-cascade overlay">
+              <img  class="card-img-top" src="https://cdn.shopify.com/s/files/1/0093/6024/4796/products/Beka-06050-2.jpg?v=1556797430" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>  
+            <!-- Card content -->
+            <div class="card-body card-body-cascade text-center pb-0">
+  
+              <!-- Title -->
+              <!-- Subtitle -->
+              <h5 class="blue-text pb-2"><strong>Geeks/Builders</strong></h5>
+              <!-- Text -->
+              <p class="card-text">Even for the kids who like building and cool stuff...let them meet their peers.</p>
+
+              <!-- Card footer -->
+              <div class="card-footer text-muted text-center mt-4">
+                <a href=""><button class="btn btn-edit">Join Club</button></a>
+              </div>
+  
+            </div>
+  
+          </div>
+          <!-- Card Wider -->
+            </div>
+          
+          </div>
+        </div>
+      </div>     
+     
+      <div class="col-md-1"></div>
     </div>
   </div>
   

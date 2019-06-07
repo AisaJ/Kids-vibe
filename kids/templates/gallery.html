@@ -6,14 +6,16 @@
     <div class="row kids-gallery">
       <div class="col-md-2"></div>
       <div class="col-md-8">
-       <h2 class="text-center">GALLERY</h2>
+       <h2 class="text-center galo">GALLERY</h2>
         <div class="row">
-          <div class="col-md-4">
             {%for photo in gallery%}
-            <a data-fancybox="gallery" href="{{photo.photo.url}}" class="kids-collection"  data-caption="{{photo.caption}}"><img src="{{photo.photo.url}}" alt="Zoomed-image" class="img-fluid">
+          <div class="col-md-6">  
+                      
+            <a data-fancybox="gallery" href="{{photo.photo.url}}" class="kids-collection"  data-caption="{{photo.caption}}"><img src="{{photo.photo.url}}" alt="Zoomed-image" class="img-fluid" height="450">
             </a>    
-            {% endfor %}  
+              
           </div>
+          {% endfor %}
         </div>      
       </div>
       <div class="col-md-2"></div>
