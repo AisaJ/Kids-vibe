@@ -36,3 +36,12 @@ class Profile(models.Model):
     return self.name
   def save_profile(self):
     self.save()
+
+class Gallery(models.Model):
+  photo=models.ImageField(upload_to='gallery/',default='funtime.jpg')
+  caption=models.CharField(max_length=60)
+
+  def __str__(self):
+    return self.caption
+  def save_gallery(self):
+    self.save()
